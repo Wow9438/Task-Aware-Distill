@@ -1,0 +1,4 @@
+362-372 changed the model to lora model
+fixed in original and copy files accelerator.fp16 to accelerator.mixed_precision == "fp16"
+
+try freezing glue lora parameters,while training taskaware filters and distillation between the student and teacher models 

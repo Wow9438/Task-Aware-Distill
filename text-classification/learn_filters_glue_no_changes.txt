@@ -1,0 +1,10 @@
+# have to change model_path in learn_filters_glue bash file 
+
+at line 76 added --info to indicate whether it's teacher or student in order for smooth working of peft model
+
+at line 511 , we get to know she has used appended other layers named filter,
+    so we too have to had filter to our peft model after glue finetuning and
+    after that we even have to freeze the adapter layers and only unfreeze filter named layers
+    stuck at this point
+
+at line 368 configured the model 
